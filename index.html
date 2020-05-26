@@ -8,33 +8,11 @@
 <!-- Any wrapping containers around the iframe need to have width and height set to `100%` for a responsive iframe experience -->
 <body style="width: 100%; height: 100%;">
 
-<script type="text/javascript">
-function attachToWindow (listener) {
-  // Cross-browser event listener for Chrome, Firefox, etc
-  if (window.addEventListener) {
-    window.addEventListener("message", listener);
-  } // IE backwards compatibility
-  else if (window.attachEvent) {
-    window.attachEvent("onmessage", listener);
-  }
-}
-
-function testCompleted (event){
-  alert('event');
-  alert(event.data);
-  console.log(event.data); // log the results to the console to review
-}
-
-attachToWindow(testCompleted);
-
 </script>>
 
-	
 <!-- Replace the "src" property with your custom Test URL -->
 <!--"your-company-name" is set up in your online configuration dashboard -->
 <iframe width="100%" height="650px" frameborder="0" src="https://omnitest.speedtestcustom.com"></iframe>
-
-
 
 </body>
 </html>
